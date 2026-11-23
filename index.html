@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Professional B.Tech Fresher Portfolio - Software Developer, Engineer & Problem Solver">
+  <meta name="keywords" content="Software Developer, B.Tech Graduate, Portfolio, Web Development, Java, Python, DSA, Engineering">
+  <meta name="author" content="Portfolio Owner">
+  
+  <title id="page-title">Portfolio | B.Tech Graduate & Aspiring Software Developer</title>
+  
+  <!-- Favicon placeholder using SVG data URI -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>">
+  
+  <!-- Google Fonts: Plus Jakarta Sans for UI & Outfit for Headings -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome CDN for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Skip to main content link for keyboard accessibility -->
+  <a href="#hero" class="skip-link">Skip to main content</a>
+
+  <!-- ========================================================================= -->
+  <!-- NAVIGATION BAR                                                            -->
+  <!-- ========================================================================= -->
+  <header class="header" id="header">
+    <nav class="nav container" aria-label="Main Navigation">
+      <a href="#hero" class="nav__logo" id="nav-brand-logo" aria-label="Home">
+        <span class="logo__bracket">&lt;</span><span id="nav-brand-name">Dev</span><span class="logo__accent">/</span><span class="logo__bracket">&gt;</span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#hero" class="nav__link active-link">Home</a></li>
+          <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+          <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+          <li class="nav__item"><a href="#education" class="nav__link">Education</a></li>
+          <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+          <li class="nav__item"><a href="#certifications" class="nav__link">Certifications</a></li>
+          <li class="nav__item"><a href="#resume" class="nav__link">Resume</a></li>
+          <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+        </ul>
+        <button class="nav__close" id="nav-close" aria-label="Close navigation menu">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <!-- Header Action Controls -->
+      <div class="nav__actions">
+        <!-- Theme Toggle Button -->
+        <button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle dark and light theme" title="Toggle theme">
+          <i class="fa-solid fa-moon" id="theme-icon"></i>
+        </button>
+
+        <!-- Resume Quick Action (Desktop) -->
+        <a href="#resume" class="btn btn--outline btn--sm nav__resume-btn">
+          <i class="fa-solid fa-file-arrow-down"></i> Resume
+        </a>
+
+        <!-- Mobile Hamburger Toggle -->
+        <button class="nav__toggle" id="nav-toggle" aria-label="Open navigation menu" aria-expanded="false">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Navigation Backdrop for Mobile -->
+  <div class="nav__backdrop" id="nav-backdrop"></div>
+
+  <!-- ========================================================================= -->
+  <!-- MAIN CONTENT AREA                                                         -->
+  <!-- ========================================================================= -->
+  <main class="main" id="main-content">
+
+    <!-- --------------------------------------------------------------------- -->
+    <!-- 1. HERO SECTION                                                       -->
+    <!-- --------------------------------------------------------------------- -->
+    <section class="hero section" id="hero">
+      <div class="hero__container container grid">
+        <!-- Hero Content / Introduction -->
+        <div class="hero__data">
+          <!-- Availability Badge -->
+          <div class="hero__badge reveal">
+            <span class="status-indicator"></span>
+            <span id="hero-status-badge">Available for Full-time Roles</span>
+          </div>
+
+          <h1 class="hero__title reveal">
+            Hi, I'm <span class="highlight" id="hero-name">[Your Name]</span>
+          </h1>
+
+          <div class="hero__subtitle-wrapper reveal">
+            <span class="hero__static-role" id="hero-main-role">B.Tech Graduate | </span>
+            <span class="hero__typing-role" id="hero-typing-target">Aspiring Software Developer</span>
+            <span class="typing-cursor" aria-hidden="true">|</span>
+          </div>
+
+          <p class="hero__description reveal" id="hero-bio">
+            A passionate engineering graduate equipped with strong fundamentals in Data Structures, Algorithms, and Object-Oriented Programming. Eager to solve real-world problems and build scalable web software.
+          </p>
+
+          <!-- Call To Action Buttons -->
+          <div class="hero__buttons reveal">
+            <a href="#projects" class="btn btn--primary">
+              <i class="fa-solid fa-code"></i> View Projects
+            </a>
+            <a href="#resume" class="btn btn--secondary" id="hero-resume-btn">
+              <i class="fa-solid fa-file-pdf"></i> Download Resume
+            </a>
+            <a href="#contact" class="btn btn--outline">
+              <i class="fa-regular fa-envelope"></i> Contact Me
+            </a>
+          </div>
+
+          <!-- Social Links -->
+          <div class="hero__social reveal" id="hero-social-links" aria-label="Social media profiles">
+            <!-- Dynamically populated via script.js -->
+          </div>
+        </div>
+
+        <!-- Hero Profile Visual Container -->
+        <div class="hero__visual reveal">
+          <div class="hero__image-wrapper">
+            <div class="hero__image-glow"></div>
+            <div class="hero__image-card">
+              <img 
+                src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80" 
+                alt="Profile picture of [Your Name]" 
+                class="hero__img" 
+                id="hero-profile-img"
+                loading="eager"
+              >
+              <!-- Floating Pill Badges -->
+              <div class="floating-badge floating-badge--top">
+                <i class="fa-solid fa-laptop-code"></i>
+                <span>Problem Solver</span>
+              </div>
+              <div class="floating-badge floating-badge--bottom">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <span id="hero-degree-pill">B.Tech 2026</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll Indicator -->
+      <a href="#about" class="hero__scroll-indicator" aria-label="Scroll down to About section">
+        <span class="mouse-icon">
+          <span class="mouse-wheel"></span>
+        </span>
+        <span class="scroll-text">Scroll Down</span>
+      </a>
+    </section>
+
+    <!-- --------------------------------------------------------------------- -->
+    <!-- 2. ABOUT ME SECTION                                                   -->
+    <!-- --------------------------------------------------------------------- -->
+    <section class="about section" id="about">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section__header text-center reveal">
+          <span class="section__subtitle">Get To Know Me</span>
+          <h2 class="section__title">About Me</h2>
+          <div class="section__line"></div>
+        </div>
+
+        <div class="about__container grid">
+          <!-- Left Column: Biography Narrative -->
+          <div class="about__content reveal">
+            <h3 class="about__heading">
+              Engineering Graduate with a Passion for Building Impactful Software
+            </h3>
+            
+            <div class="about__paragraphs" id="about-paragraphs">
+              <!-- Dynamically populated from portfolioData -->
+            </div>
+
+            <!-- Career Objective Box -->
+            <div class="about__objective">
+              <div class="objective__icon">
+                <i class="fa-solid fa-bullseye"></i>
+              </div>
+              <div class="objective__text">
+                <h4 class="objective__title">Career Objective</h4>
+                <p id="about-objective-text">
+                  To secure an entry-level software engineering role where I can utilize my analytical mindset and programming skills to develop scalable software while learning from industry veterans.
+                </p>
+              </div>
+            </div>
+
+            <!-- Trait Badges -->
+            <div class="about__traits" id="about-traits" aria-label="Professional Strengths">
+              <!-- Dynamically populated from portfolioData -->
+            </div>
+          </div>
+
+          <!-- Right Column: Stats & Highlights -->
+          <div class="about__stats-column reveal">
+            <div class="stats__grid" id="about-stats-grid">
+              <!-- Dynamically populated from portfolioData with counter animation -->
+            </div>
+
+            <!-- Recruiter Quick Summary Card -->
+            <div class="about__recruiter-card">
+              <div class="recruiter-card__header">
+                <i class="fa-solid fa-briefcase"></i>
+                <h4>Why Hire Me?</h4>
+              </div>
+              <ul class="recruiter-card__list">
+                <li><i class="fa-solid fa-circle-check"></i> <strong>Strong CS Core:</strong> Solid grasp of DSA, OOP, DBMS, OS, and CN.</li>
+                <li><i class="fa-solid fa-circle-check"></i> <strong>Fast Learner:</strong> Adapts swiftly to new frameworks and tools.</li>
+                <li><i class="fa-solid fa-circle-check"></i> <strong>Production Ready:</strong> Familiar with Git, Clean Code, and testing.</li>
+                <li><i class="fa-solid fa-circle-check"></i> <strong>Immediate Joiner:</strong> Ready to relocate or work remotely immediately.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- --------------------------------------------------------------------- -->
+    <!-- 3. SKILLS SECTION                                                     -->
+    <!-- --------------------------------------------------------------------- -->
+    <section class="skills section" id="skills">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section__header text-center reveal">
+          <span class="section__subtitle">My Technical Toolbox</span>
+          <h2 class="section__title">Technical Skills</h2>
+          <div class="section__line"></div>
+          <p class="section__description">
+            A comprehensive overview of programming languages, frameworks, databases, and fundamental computer science disciplines I practice.
+          </p>
+        </div>
+
+        <!-- Skills Grid Container (Dynamically Rendered from portfolioData) -->
+        <div class="skills__container grid" id="skills-container">
+          <!-- Populated by script.js with categories: Languages, Web, Databases, Tools, Core Subjects -->
+        </div>
+      </div>
+    </section>
+
+    <!-- --------------------------------------------------------------------- -->
+    <!-- 4. EDUCATION SECTION                                                  -->
+    <!-- --------------------------------------------------------------------- -->
+    <section class="education section" id="education">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section__header text-center reveal">
+          <span class="section__subtitle">Academic Background</span>
+          <h2 class="section__title">Education</h2>
+          <div class="section__line"></div>
+          <p class="section__description">
+            My academic qualifications, engineering coursework, and scholastic milestones.
+          </p>
+        </div>
+
+        <!-- Education Timeline Container -->
+        <div class="education__timeline reveal" id="education-timeline">
+          <!-- Dynamically populated from portfolioData -->
+        </div>
+      </div>
+    </section>
+
+    <!-- --------------------------------------------------------------------- -->
+    <!-- 5. PROJECTS SECTION                                                   -->
+    <!-- --------------------------------------------------------------------- -->
+    <section class="projects section" id="projects">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section__header text-center reveal">
+          <span class="section__subtitle">Portfolio Highlights</span>
+          <h2 class="section__title">Featured Projects</h2>
+          <div class="section__line"></div>
+          <p class="section__description">
+            Practical applications built to solve realistic problems. Each project highlights clean architecture, database integration, and intuitive user experiences.
+          </p>
+        </div>
+
+        <!-- Projects Grid Container -->
+        <div class="projects__container grid" id="projects-container">
+          <!-- Dynamically populated from portfolioData -->
+        </div>
+      </div>
+    </section>
+
+    <!-- --------------------------------------------------------------------- -->
+    <!-- 6. CERTIFICATIONS & ACHIEVEMENTS SECTION                              -->
+    <!-- --------------------------------------------------------------------- -->
+    <section class="certifications section" id="certifications">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section__header text-center reveal">
+          <span class="section__subtitle">Validations & Milestones</span>
+          <h2 class="section__title">Certifications & Achievements</h2>
+          <div class="section__line"></div>
+          <p class="section__description">
+            Continuous learning credentials, coding certifications, and competitive programming highlights.
+          </p>
+        </div>
+
+        <div class="certifications__wrapper grid">
+          <!-- Certifications Column -->
+          <div class="certifications__column reveal">
+            <div class="column__header">
+              <i class="fa-solid fa-certificate"></i>
+              <h3>Certifications & Courses</h3>
+            </div>
+            <div class="certifications__list" id="certifications-list">
+              <!-- Dynamically populated from portfolioData -->
+            </div>
+          </div>
+
+          <!-- Achievements Column -->
+          <div class="achievements__column reveal">
+            <div class="column__header">
+              <i class="fa-solid fa-trophy"></i>
+              <h3>Honors & Achievements</h3>
+            </div>
+            <div class="achievements__list" id="achievements-list">
+              <!-- Dynamically populated from portfolioData -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- --------------------------------------------------------------------- -->
+    <!-- 7. RESUME SECTION                                                     -->
+    <!-- --------------------------------------------------------------------- -->
+    <section class="resume-cta section" id="resume">
+      <div class="container">
+        <div class="resume-cta__card reveal">
+          <div class="resume-cta__content">
+            <div class="resume-cta__badge">
+              <i class="fa-solid fa-file-check"></i>
+              <span>Recruiter Ready</span>
+            </div>
+            <h2 class="resume-cta__title">Looking for a Driven Fresher to Join Your Team?</h2>
+            <p class="resume-cta__description">
+              My resume includes a comprehensive breakdown of my engineering coursework, technical skillset, project repositories, and academic credentials. Download a one-page ATS-friendly PDF copy below.
+            </p>
+            <div class="resume-cta__actions">
+              <button class="btn btn--primary btn--lg" id="download-resume-btn">
+                <i class="fa-solid fa-download"></i> Download Resume (PDF)
+              </button>
+              <button class="btn btn--secondary btn--lg" id="view-resume-btn">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> View in New Tab
+              </button>
+            </div>
+          </div>
+          <div class="resume-cta__preview-box">
+            <div class="preview-box__mockup">
+              <div class="mockup__header">
+                <span class="mockup__dot"></span>
+                <span class="mockup__dot"></span>
+                <span class="mockup__dot"></span>
+                <span class="mockup__title">Resume_Preview.pdf</span>
+              </div>
+              <div class="mockup__body">
+                <i class="fa-solid fa-file-pdf mockup__icon"></i>
+                <h4 id="resume-preview-name">[Your Name]</h4>
+                <p id="resume-preview-role">B.Tech in Computer Science & Engineering</p>
+                <div class="mockup__lines">
+                  <span class="mockup__line"></span>
+                  <span class="mockup__line short"></span>
+                  <span class="mockup__line"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- --------------------------------------------------------------------- -->
+    <!-- 8. CONTACT SECTION                                                    -->
+    <!-- --------------------------------------------------------------------- -->
+    <section class="contact section" id="contact">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section__header text-center reveal">
+          <span class="section__subtitle">Let's Connect</span>
+          <h2 class="section__title">Get In Touch</h2>
+          <div class="section__line"></div>
+          <p class="section__description">
+            Whether you have an entry-level software opening, an internship opportunity, or just want to discuss technology, my inbox is always open!
+          </p>
+        </div>
+
+        <div class="contact__container grid">
+          <!-- Left Column: Contact Information Cards -->
+          <div class="contact__info reveal">
+            <h3 class="contact__heading">Contact Information</h3>
+            <p class="contact__intro">
+              Feel free to reach out via email, phone, or connect with me through my social profiles.
+            </p>
+
+            <div class="contact__cards" id="contact-info-cards">
+              <!-- Dynamically populated from portfolioData -->
+            </div>
+
+            <!-- Working Availability Box -->
+            <div class="contact__availability">
+              <i class="fa-solid fa-clock"></i>
+              <div>
+                <h4>Work Preference & Availability</h4>
+                <p id="contact-availability-text">Open for On-site, Hybrid, and Remote Roles across India / Globally. Available for immediate onboarding.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Interactive Contact Form -->
+          <div class="contact__form-wrapper reveal">
+            <h3 class="contact__heading">Send a Message</h3>
+            
+            <form class="contact__form" id="contact-form" novalidate>
+              <!-- Name Input -->
+              <div class="form__group">
+                <label for="contact-name" class="form__label">
+                  Your Full Name <span class="required">*</span>
+                </label>
+                <div class="input__wrapper">
+                  <i class="fa-regular fa-user input__icon"></i>
+                  <input 
+                    type="text" 
+                    id="contact-name" 
+                    name="name" 
+                    class="form__input" 
+                    placeholder="e.g. John Doe"
+                    required
+                    aria-describedby="name-error"
+                  >
+                </div>
+                <span class="form__error" id="name-error" aria-live="polite"></span>
+              </div>
+
+              <!-- Email Input -->
+              <div class="form__group">
+                <label for="contact-email" class="form__label">
+                  Your Email Address <span class="required">*</span>
+                </label>
+                <div class="input__wrapper">
+                  <i class="fa-regular fa-envelope input__icon"></i>
+                  <input 
+                    type="email" 
+                    id="contact-email" 
+                    name="email" 
+                    class="form__input" 
+                    placeholder="e.g. johndoe@company.com" 
+                    required
+                    aria-describedby="email-error"
+                  >
+                </div>
+                <span class="form__error" id="email-error" aria-live="polite"></span>
+              </div>
+
+              <!-- Subject Input -->
+              <div class="form__group">
+                <label for="contact-subject" class="form__label">
+                  Subject <span class="required">*</span>
+                </label>
+                <div class="input__wrapper">
+                  <i class="fa-regular fa-bookmark input__icon"></i>
+                  <input 
+                    type="text" 
+                    id="contact-subject" 
+                    name="subject" 
+                    class="form__input" 
+                    placeholder="e.g. Job Opportunity / Interview Invitation"
+                    required
+                    aria-describedby="subject-error"
+                  >
+                </div>
+                <span class="form__error" id="subject-error" aria-live="polite"></span>
+              </div>
+
+              <!-- Message Input -->
+              <div class="form__group">
+                <label for="contact-message" class="form__label">
+                  Your Message <span class="required">*</span>
+                </label>
+                <div class="input__wrapper textarea__wrapper">
+                  <i class="fa-regular fa-comment-dots input__icon"></i>
+                  <textarea 
+                    id="contact-message" 
+                    name="message" 
+                    rows="5" 
+                    class="form__input form__textarea" 
+                    placeholder="Write your message here..." 
+                    required
+                    aria-describedby="message-error"
+                  ></textarea>
+                </div>
+                <span class="form__error" id="message-error" aria-live="polite"></span>
+              </div>
+
+              <!-- Form Submit Button -->
+              <button type="submit" class="btn btn--primary btn--full" id="contact-submit-btn">
+                <i class="fa-solid fa-paper-plane"></i> Send Message
+              </button>
+
+              <p class="form__note">
+                <i class="fa-solid fa-circle-info"></i> Form uses <code>mailto:</code> directly. You can also configure Formspree or EmailJS as explained in the documentation.
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================================= -->
+  <!-- 9. FOOTER SECTION                                                         -->
+  <!-- ========================================================================= -->
+  <footer class="footer">
+    <div class="footer__container container grid">
+      <!-- Footer Col 1: Brand & Tagline -->
+      <div class="footer__brand">
+        <a href="#hero" class="footer__logo">
+          <span class="logo__bracket">&lt;</span><span id="footer-brand-name">Dev</span><span class="logo__accent">/</span><span class="logo__bracket">&gt;</span>
+        </a>
+        <p class="footer__tagline" id="footer-tagline">
+          B.Tech Graduate & Aspiring Software Developer dedicated to writing clean, maintainable code.
+        </p>
+        <div class="footer__status">
+          <span class="status-indicator"></span> Immediate Joiner
+        </div>
+      </div>
+
+      <!-- Footer Col 2: Navigation Links -->
+      <div class="footer__links-col">
+        <h4 class="footer__heading">Quick Navigation</h4>
+        <ul class="footer__links">
+          <li><a href="#hero" class="footer__link">Home</a></li>
+          <li><a href="#about" class="footer__link">About Me</a></li>
+          <li><a href="#skills" class="footer__link">Technical Skills</a></li>
+          <li><a href="#education" class="footer__link">Education</a></li>
+          <li><a href="#projects" class="footer__link">Projects</a></li>
+          <li><a href="#contact" class="footer__link">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Footer Col 3: Social Profiles -->
+      <div class="footer__social-col">
+        <h4 class="footer__heading">Connect With Me</h4>
+        <div class="footer__socials" id="footer-social-links">
+          <!-- Dynamically populated from portfolioData -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Bottom / Copyright Bar -->
+    <div class="footer__bottom">
+      <div class="container footer__bottom-container">
+        <p class="footer__copy">
+          &copy; <span id="current-year">2024</span> <span id="footer-owner-name">[Your Name]</span>. All Rights Reserved. Built with HTML5, CSS3, &amp; Vanilla JavaScript.
+        </p>
+        <a href="#hero" class="footer__back-to-top" aria-label="Back to top of page">
+          Back to Top <i class="fa-solid fa-arrow-up"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================================= -->
+  <!-- FLOATING UI ELEMENTS: BACK TO TOP BUTTON & TOAST NOTIFICATION             -->
+  <!-- ========================================================================= -->
+  <!-- Floating Back to Top Button -->
+  <button class="back-to-top" id="back-to-top" aria-label="Scroll back to top" title="Back to top">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+
+  <!-- Interactive Toast Notification Container -->
+  <div class="toast-container" id="toast-container" role="status" aria-live="polite"></div>
+
+  <!-- Main JavaScript File containing portfolioData -->
+  <script src="script.js"></script>
+</body>
+</html>
